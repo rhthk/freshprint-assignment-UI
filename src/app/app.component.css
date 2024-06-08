@@ -1,0 +1,33 @@
+header {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0 8rem;
+  display: flex;
+  justify-content: flex-end;
+  column-gap: 2rem;
+}
+
+nav a {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+  padding: 1rem;
+  border-bottom: 0.15rem solid;
+  border-color: transparent;
+}
+
+nav a:hover,
+nav a.active {
+  border-color: #337ab7;
+}
+
+main {
+  display: grid;
+  grid-template-rows: 0 1fr;
+  overflow: auto;
+}

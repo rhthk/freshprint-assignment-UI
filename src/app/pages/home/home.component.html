@@ -1,0 +1,13 @@
+<div class="container">
+  <h2>Search GitHub User</h2>
+  <app-search (onSearch)="searchHandler($event)"></app-search>
+  <div class="search-result">
+    <h3>Search Results</h3>
+    <div class="search-result-container">
+      <p *ngIf="showNoResult; else searchresult">No Results Found</p>
+      <ng-template #searchresult>
+        <app-user [user]="user"></app-user>
+      </ng-template>
+    </div>
+  </div>
+</div>
